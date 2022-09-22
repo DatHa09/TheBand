@@ -340,8 +340,25 @@ html {
   line-height: 27px;
 }
 
+.contact_info a {
+  color: #003cf0;
+  opacity: 0.6;
+}
+
+.contact_info a:hover {
+  opacity: 1;
+}
+
+.contact_info p {
+  padding-bottom: 4px;
+}
+
 .contact_info i[class*="fa-"] {
   width: 30px;
+}
+
+.contact_container .contact_form {
+  text-align: end;
 }
 
 .contact_container .form_control {
@@ -353,10 +370,6 @@ html {
   width: 100%;
 }
 
-.contact_container .contact_form {
-  text-align: end;
-}
-
 .map_section img {
   width: 100%;
 }
@@ -365,12 +378,10 @@ html {
   padding: 64px 16px;
 }
 
-#footer .social_list {
-}
-
 #footer .social_list a {
-  font-size: 24px;
+  font-size: 28px;
   color: rgba(0, 0, 0, 0.6);
+  padding: 12px;
 }
 
 #footer .social_list a:hover {
@@ -379,11 +390,13 @@ html {
 
 #footer .copyright {
   margin: 21px 0;
-  font-size: 15px;
+  font-size: 16px;
 }
 #footer .copyright,
 #footer .copyright a {
   color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 16px 0;
 }
 
 .modal.open {
