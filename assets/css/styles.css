@@ -61,7 +61,6 @@ html {
 #header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -104,6 +103,17 @@ html {
   background-color: #ccc;
 }
 
+#nav .sub_nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 #nav li:hover .sub_nav {
   display: block;
 }
@@ -112,39 +122,38 @@ html {
   color: #000;
 }
 
-#nav li .sub_nav {
-  position: absolute;
-  background-color: #fff;
-}
-
-#nav .sub_nav {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 160px;
-  list-style: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
 #nav .sub_nav a {
   color: #000;
   font-weight: 400;
-  padding: 8px 12px;
+  padding: 8px 24px;
   line-height: 22.5px;
   text-transform: capitalize;
 }
 
+#header .mobile_menu_btn,
 #header .search_btn {
   padding: 0 24px;
-  line-height: var(--nav_height);
+  height: 46px;
+  line-height: 46px;
   font-size: 15px;
   color: #fff;
   cursor: pointer;
 }
 
+#header .mobile_menu_btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
 #header .search_btn:hover {
   background-color: #f44336;
+}
+
+#header .mobile_menu_btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #slider {
@@ -163,24 +172,24 @@ html {
 }
 
 #slider .text_heading {
-  color: #fff;
-  font-weight: 400;
   margin: 10px 0;
   line-height: 36px;
+  font-weight: 400;
   font-size: 24px;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
 }
 
 #slider .text_desc {
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-}
-
-#content {
+  text-shadow: 0px 0px 2px #000;
 }
 
 #content .content_section {
   width: 768px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 64px 16px;
 }
@@ -219,7 +228,6 @@ html {
 
 .members_list img {
   width: 154px;
-  height: 154px;
   margin: 0px 0px 16px;
   border-radius: 4px;
   display: inline;
