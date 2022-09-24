@@ -1,16 +1,20 @@
 /* PC */
-@media (min-width: 1024px) {
+/* 1024 px = 64em */
+@media (min-width: 64em) {
 }
 
 /* Tablet */
-@media (max-width: 1023px) and (min-width: 740px) {
+/* 1023px = 63.9375em */
+/* 740px = 46.25em */
+@media (max-width: 63.9375em) and (min-width: 46.25em) {
   #slider .text_content {
     padding: 0;
   }
 }
 
 /* Mobile */
-@media (max-width: 739px) {
+/* 739px = 46.1875em */
+@media (max-width: 46.1875em) {
   #header {
     overflow: hidden;
   }
